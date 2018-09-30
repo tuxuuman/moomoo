@@ -6,7 +6,7 @@ var btnEnterGame = document.getElementById('enterGame');
 var events = new EventEmitter();
 
 export function encodeMsg(m) {
-    return msgpack.decode(m);
+    return msgpack.encode(m);
 }
 
 export function decodeMsg(m) {
